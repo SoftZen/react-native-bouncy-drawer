@@ -1,0 +1,21 @@
+{
+  "name": "react-native-bouncy-drawer",
+  "version": "1.0.0",
+  "description": "Bouncy drawer for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "drawer",
+    "react-native",
+    "bouncy"
+  ],
+  "author": "Alexander Vitanov",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react-native-vector-icons": "^4.4.2",
+    "react-native-view": "^1.1.0"
+  }
+}
