@@ -1,7 +1,7 @@
 # react-native-bouncy-drawer
 Customizable bouncy drawer for React Native
 
-![alt text](https://github.com/SoftZen/react-native-bouncy-drawer/blob/master/resources/example.gif?raw=true "example drawer")
+<img src="https://github.com/SoftZen/react-native-bouncy-drawer/blob/master/resources/example.gif" alt="example drawer" width="400"/>
 
 Installation
 ---
