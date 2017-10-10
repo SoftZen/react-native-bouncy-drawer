@@ -3,7 +3,7 @@ import {
   Text,
 } from 'react-native'
 import View from 'react-native-view'
-import Header from './src/Header'
+import Header from 'react-native-bouncy-drawer'
 import MAIcon from 'react-native-vector-icons/MaterialIcons'
 
 export default class App extends Component {
