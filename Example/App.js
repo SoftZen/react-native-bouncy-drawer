@@ -3,7 +3,7 @@ import {
   Text,
 } from 'react-native'
 import View from 'react-native-view'
-import Header from 'react-native-bouncy-drawer'
+import BouncyDrawer from 'react-native-bouncy-drawer'
 import MAIcon from 'react-native-vector-icons/MaterialIcons'
 
 export default class App extends Component {
@@ -35,7 +35,7 @@ export default class App extends Component {
   render() {
     return (
       <View flex>
-        <Header
+        <BouncyDrawer
           willOpen={() => console.log('will open')}
           didOpen={() => console.log('did open')}
           willClose={() => console.log('will close')}
