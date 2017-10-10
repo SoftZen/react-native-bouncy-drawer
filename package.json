@@ -1,5 +1,5 @@
 {
-  "name": "react-native-bouncy-drawer",
+  "name": "@softzen/react-native-bouncy-drawer",
   "version": "1.0.0",
   "description": "Bouncy drawer for React Native",
   "main": "index.js",
@@ -17,5 +17,13 @@
     "prop-types": "^15.6.0",
     "react-native-vector-icons": "^4.4.2",
     "react-native-view": "^1.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoftZen/react-native-bouncy-drawer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SoftZen/react-native-bouncy-drawer/issues"
+  },
+  "homepage": "https://github.com/SoftZen/react-native-bouncy-drawer#readme"
 }
