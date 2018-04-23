@@ -73,7 +73,7 @@ export default class Header extends Component {
         const { open } = this.state
         const { headerHeight, openButtonStyle, closeButtonStyle, openedHeaderStyle, closedHeaderStyle,
             openedHeaderContent, defaultOpenButtonIconColor, defaultCloseButtonIconColor, title,
-            titleStyle, defaultOpenButtonIconSize, defaultCloseButtonIconSize } = this.props
+            titleStyle, defaultOpenButtonIconSize, defaultCloseButtonIconSize, openButtonPosition, closeButtonPosition } = this.props
         const rotation = this.rotation.interpolate({
             inputRange: [-90, 0],
             outputRange: ['-90deg', '0deg']
@@ -90,14 +90,14 @@ export default class Header extends Component {
         const openButtonContent = <MAIcon name="menu" size={defaultOpenButtonIconSize} color={defaultOpenButtonIconColor} />
         const closeButtonContent = <MAIcon name="close" size={defaultCloseButtonIconSize} color={defaultCloseButtonIconColor} />
         const openButton = (
-            <View style={{ ...openButtonStyle, position: 'absolute', left: 8, top: 14, transform: [{ rotate: '90deg' }] }}>
+            <View style={{ ...openButtonStyle, position: 'absolute', left: 8, top: openButtonPosition == 'left' ? 14 : width - 40, transform: [{ rotate: '90deg' }] }}>
                 <TouchableOpacity onPress={this.onToggle}>
                     {this.props.openButtonContent || openButtonContent}
                 </TouchableOpacity>
             </View>
         )
         const closeButton = (
-            <TouchableOpacity onPress={this.onToggle} style={{ ...closeButtonStyle, marginLeft: 12, marginTop: Platform.OS == 'ios' ? 28 : 18 }}>
+            <TouchableOpacity onPress={this.onToggle} style={{ ...closeButtonStyle, marginLeft: closeButtonPosition == 'left' ? 14 : width - 42, marginTop: Platform.OS == 'ios' ? 28 : 18 }}>
                 {this.props.closeButtonContent || closeButtonContent}
             </TouchableOpacity>
         )
@@ -136,7 +136,6 @@ export default class Header extends Component {
 
 const styles = {
     closedHeader: {
-        shadowOpacity: 0.21,
         shadowOpacity: 1,
         shadowRadius: 2,
         shadowOffset: { height: 0, width: 0 },
@@ -169,6 +168,8 @@ Header.propTypes = {
     closeTension: PropTypes.number,
     closeSpeed: PropTypes.number,
     closeBounciness: PropTypes.number,
+    openButtonPosition: PropTypes.oneOf(['left', 'right']),
+    closeButtonPosition: PropTypes.oneOf(['left', 'right']),
 };
 
 Header.defaultProps = {
@@ -180,4 +181,6 @@ Header.defaultProps = {
     defaultCloseButtonIconColor: "#000",
     defaultOpenButtonIconSize: 26,
     defaultCloseButtonIconSize: 30,
+    openButtonPosition: 'left',
+    closeButtonPosition: 'left',
 }

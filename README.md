@@ -86,6 +86,8 @@ Refer to the Example
 |closeTension|number|Tension to close animation|
 |closeSpeed|number|Speed to close animation|
 |closeBounciness|number|Bounciness to close animation|
+|openButtonPosition|('left',right)|Position of the open button|'left'|
+|closeButtonPosition|('left',right)|Position of the close button|'left'|
 
 
 License
