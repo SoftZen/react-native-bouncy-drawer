@@ -1,6 +1,8 @@
 # react-native-bouncy-drawer
 Customizable bouncy drawer for React Native
 
+[![NPM](https://nodei.co/npm/react-native-bouncy-drawer.png)](https://www.npmjs.com/package/react-native-bouncy-drawer)
+
 <img src="https://github.com/SoftZen/react-native-bouncy-drawer/blob/master/resources/example.gif" alt="example drawer" width="400"/>
 
 Installation
