@@ -1,7 +1,10 @@
-# react-native-bouncy-drawer
-Customizable bouncy drawer for React Native
+
+[![](https://img.shields.io/npm/dm/react-native-bouncy-drawer.svg?style=flat-square)](https://www.npmjs.com/package/react-native-bouncy-drawer)
 
 [![NPM](https://nodei.co/npm/react-native-bouncy-drawer.png)](https://www.npmjs.com/package/react-native-bouncy-drawer)
+
+# react-native-bouncy-drawer
+Customizable bouncy drawer for React Native
 
 <img src="https://github.com/SoftZen/react-native-bouncy-drawer/blob/master/resources/example.gif" alt="example drawer" width="400"/>
 
